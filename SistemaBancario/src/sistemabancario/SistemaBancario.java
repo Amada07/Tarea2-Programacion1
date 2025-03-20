@@ -40,5 +40,8 @@ public class SistemaBancario {
         
         cliente2.mostrarDatos();
         System.out.println("Saldo actual: " + cuenta2.consultarSaldo());
+        
+      // Mostrar cuentas registradas en el banco
+        banco.mostrarCuentas();
     }
 }
