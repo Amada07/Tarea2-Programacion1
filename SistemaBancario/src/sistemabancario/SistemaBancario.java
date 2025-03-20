@@ -27,5 +27,10 @@ public class SistemaBancario {
         banco.agregarCuenta(cuenta1);
         banco.agregarCuenta(cuenta2);
 
+         // Realizar operaciones
+        cuenta1.depositar(1000);
+        cuenta1.retirar(500);
+        cuenta2.depositar(2000);
+        cuenta2.retirar(3000); // Intento de retiro con fondos insuficientes
  }
 }
