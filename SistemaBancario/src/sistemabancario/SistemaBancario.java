@@ -22,6 +22,10 @@ public class SistemaBancario {
     CuentaBancaria cuenta1= new CuentaBancaria("001",cliente1);
     CuentaBancaria cuenta2= new CuentaBancaria("002", cliente2);
     
-    
+    // Crear banco y agregar cuentas
+        Banco banco = new Banco("Banco Central");
+        banco.agregarCuenta(cuenta1);
+        banco.agregarCuenta(cuenta2);
+
  }
 }
