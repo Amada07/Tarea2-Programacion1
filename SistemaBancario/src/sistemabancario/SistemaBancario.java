@@ -17,6 +17,11 @@ public class SistemaBancario {
         // Crear clientes
         Cliente cliente1 =new Cliente("Amada Carcamo", "123567802","Zona 10 Ciudad de Guatemala");
         Cliente cliente2= new Cliente("Flor Renderos", "5764377496","Avenida del Sol, Edificio Aurora, ciudad Guatemala");
-    }
     
+    //Crear cuentas bancarias asociadas a los clientes
+    CuentaBancaria cuenta1= new CuentaBancaria("001",cliente1);
+    CuentaBancaria cuenta2= new CuentaBancaria("002", cliente2);
+    
+    
+ }
 }
