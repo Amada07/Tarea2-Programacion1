@@ -41,6 +41,29 @@ public class CuentaBancaria {
         this.propietario = propietario;
     }
     
- 
+  //Metodo para depositar dinero 
+    public void depositar(double monto){
+        if (monto> 0){
+            saldo +=monto;
+            System.out.println("Deposito exitoso.Nuevo saldo: "+ saldo);
+        } else {
+            System.out.println("Error:El monto a depositar no es valido");
+        }
+    }
     
-}
+    //Metodo para retirar dinero
+    public void retirar(double monto){
+         if (monto > 0 && monto <= saldo) {
+            saldo -= monto;
+            System.out.println("Retiro exitoso. Nuevo saldo: " + saldo);
+        } else {
+            System.out.println("Error: Fondos insuficientes o monto inválido.");
+        }
+    }
+
+    // Método para consultar el saldo
+    public double consultarSaldo() {
+        return saldo;
+    }
+  }
+
