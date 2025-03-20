@@ -20,4 +20,16 @@ public class Banco {
         this.nombre = nombre;
         this.listaCuentas= new ArrayList();
     }
+    
+    //Getters
+    public String getNombre(){
+        return nombre;
+    }
+    public ArrayList<CuentaBancaria> getListaCuentas(){
+        return listaCuentas;
+    }
+    //Setter nombre(si se en algun caso necesita cambiarse)
+    public void setNombre(String nombre){
+        this.nombre =nombre;
+    }
 }
