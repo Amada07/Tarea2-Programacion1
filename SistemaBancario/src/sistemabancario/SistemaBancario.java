@@ -14,7 +14,9 @@ public class SistemaBancario {
      * @param args the command line arguments
      */
     public static void main(String[] args) {
-        // TODO code application logic here
+        // Crear clientes
+        Cliente cliente1 =new Cliente("Amada Carcamo", "123567802","Zona 10 Ciudad de Guatemala");
+        Cliente cliente2= new Cliente("Flor Renderos", "5764377496","Avenida del Sol, Edificio Aurora, ciudad Guatemala");
     }
     
 }
