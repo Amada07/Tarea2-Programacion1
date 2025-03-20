@@ -32,5 +32,13 @@ public class SistemaBancario {
         cuenta1.retirar(500);
         cuenta2.depositar(2000);
         cuenta2.retirar(3000); // Intento de retiro con fondos insuficientes
- }
+        
+     // Mostrar información de clientes y cuentas
+        System.out.println("\nInformación de los clientes y sus cuentas:");
+        cliente1.mostrarDatos();
+        System.out.println("Saldo actual: " + cuenta1.consultarSaldo());
+        
+        cliente2.mostrarDatos();
+        System.out.println("Saldo actual: " + cuenta2.consultarSaldo());
+    }
 }
