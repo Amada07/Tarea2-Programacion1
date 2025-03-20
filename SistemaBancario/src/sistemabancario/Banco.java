@@ -39,4 +39,11 @@ public class Banco {
         System.out.println("Cuenta agregada con exito");
     }
     
+    //mostrar cuentas
+    public void mostrarCuentas(){
+        System.out.println("Cuentas en el banco"+nombre + ":");
+        for(CuentaBancaria cuenta : listaCuentas){
+            System.out.println("Numero de cuenta:"+cuenta.getNumeroCuenta()+ ", Saldo: " + cuenta.getSaldo());
+        }
+    }
 }
