@@ -46,5 +46,10 @@ public class Cliente {
         this.direccion = direccion;
     }
     
-    
+    // metodo publico para mostrar datos 
+    public void mostrarDatos(){
+        System.out.println("Nombre:" +nombre);
+        System.out.println("DPI:"+ dpi);
+        System.out.println("Direccion:" + direccion);
+    }
 }
