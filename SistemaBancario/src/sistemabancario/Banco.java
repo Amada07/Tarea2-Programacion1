@@ -32,4 +32,11 @@ public class Banco {
     public void setNombre(String nombre){
         this.nombre =nombre;
     }
+    
+    //metodo agregar cuenta bancaria
+    public void agregarCuenta(CuentaBancaria cuenta){
+        listaCuentas.add(cuenta);
+        System.out.println("Cuenta agregada con exito");
+    }
+    
 }
